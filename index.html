@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSight | Financial News Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span>◈</span> FinSight
+        </div>
+        <button id="themeToggle" class="theme-btn">☀️</button>
+    </nav>
+
+    <section class="hero">
+        <p class="eyebrow">FINANCIAL NEWS INTELLIGENCE</p>
+        <h1>Understand the market. <span>Not just the news.</span></h1>
+        <p class="hero-description">
+            Track financial news and market sentiment in one simple dashboard.
+        </p>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">MARKET OVERVIEW</p>
+                    <h2>Market Pulse</h2>
+                </div>
+            </div>
+
+            <div class="market-card">
+                <div class="market-card-top">
+                    <div>
+                        <span class="market-name">🇮🇳 India Market</span>
+                        <p>News Sentiment</p>
+                    </div>
+                    <span id="indiaStatus" class="status-badge neutral">Neutral</span>
+                </div>
+
+                <div class="gauge-container">
+                    <div class="gauge">
+                        <div id="indiaPointer" class="gauge-pointer"></div>
+                    </div>
+                    <div class="gauge-labels">
+                        <span>Bearish</span>
+                        <span>Neutral</span>
+                        <span>Bullish</span>
+                    </div>
+                </div>
+
+                <div class="score-display">
+                    <strong id="indiaScore">50</strong>
+                    <span>/ 100</span>
+                </div>
+
+                <p id="indiaDescription" class="market-description">
+                    Loading market sentiment...
+                </p>
+            </div>
+        </section>
+
+        <section class="dashboard-grid">
+            <div class="panel">
+                <div class="panel-heading">
+                    <div>
+                        <p class="section-label">SENTIMENT</p>
+                        <h3>News Breakdown</h3>
+                    </div>
+                </div>
+
+                <div class="breakdown">
+                    <div class="breakdown-row">
+                        <div class="breakdown-title">
+                            <span class="dot bullish"></span> Bullish
+                        </div>
+                        <strong id="bullishPercent">0%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="bullishBar" class="progress-fill bullish-fill"></div>
+                    </div>
+
+                    <div class="breakdown-row">
+                        <div class="breakdown-title">
+                            <span class="dot neutral"></span> Neutral
+                        </div>
+                        <strong id="neutralPercent">0%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="neutralBar" class="progress-fill neutral-fill"></div>
+                    </div>
+
+                    <div class="breakdown-row">
+                        <div class="breakdown-title">
+                            <span class="dot bearish"></span> Bearish
+                        </div>
+                        <strong id="bearishPercent">0%</strong>
+                    </div>
+                    <div class="progress">
+                        <div id="bearishBar" class="progress-fill bearish-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section news-section">
+            <div class="section-heading">
+                <div>
+                    <p class="section-label">FINANCIAL NEWS</p>
+                    <h2>Latest News</h2>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="search-box">
+                    <span>🔎</span>
+                    <input type="text" id="searchInput" placeholder="Search financial news...">
+                </div>
+            </div>
+
+            <div id="newsContainer" class="news-container">
+                <div class="loading-card">
+                    <div class="loader"></div>
+                    <p>Loading financial news...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">◈ FinSight</div>
+        <p>Financial News & Market Intelligence Dashboard</p>
+        <small>Built with HTML, CSS & JavaScript</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
