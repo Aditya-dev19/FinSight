@@ -1,7 +1,7 @@
 # ◈ FinPulse — Financial News Intelligence Dashboard
 A zero-dependency financial news dashboard that aggregates RSS feeds, classifies headlines by sentiment (Bullish / Neutral / Bearish), and visualizes market mood with an animated gauge. Built entirely with **vanilla HTML, CSS & JavaScript**.
 
-🔗 **Live Demo:** finsight-omega-roan.vercel.app
+🔗 **Live Demo:** [finsight-omega-roan.vercel.app](https://finsight-omega-roan.vercel.app/)
 
 ## ✨ Features
 
